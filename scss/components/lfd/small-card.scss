@@ -344,6 +344,10 @@
     $layoutSelector: '#{$instanceSelector}[data-id="#{$widgetInstanceId}"] #{$layout}';
   }
 
+  #{$instanceSelector} {
+    width: 100%;
+  }
+
   #{$layoutSelector} {
     position: map-get($configuration, lfdPosition) !important;
     z-index: map-get($configuration, lfdIndex);
