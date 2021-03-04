@@ -279,6 +279,9 @@
     simpleListSortIconColor: $simpleListSortIconColor,
     simpleListSortIconColorTablet: $simpleListSortIconColorTablet,
     simpleListSortIconColorDesktop: $simpleListSortIconColorDesktop,
+    simpleListFileArrowColor: $simpleListFileArrowColor,
+    simpleListFileArrowColorTablet: $simpleListFileArrowColorTablet,
+    simpleListFileArrowColorDesktop: $simpleListFileArrowColorDesktop
   ), $options);
 
   $instanceSelector: '[data-widget-package="com.fliplet.dynamic-lists"]';
@@ -1142,6 +1145,24 @@
         background-color: map-get($configuration, simpleListImageBackground);
       }
 
+      .file-holder {
+        .file-item {
+          .file-title {
+            color: $bodyTextColor;
+            font-weight: $bodyFontWeight;
+          }
+
+          .file-info {
+            font-size: $bodyFontSize * 0.85;
+            color: rgba($bodyTextColor, 0.5);
+          }
+
+          .file-icon {
+            color: map-get($configuration, smallCardListFileArrowColor);
+          }
+        }
+      }
+
       .simple-list-detail-value {
         @include fontOnly((
           fontFamily: map-get($configuration, simpleListDetailTextFontFamily),
@@ -1196,6 +1217,24 @@
 
         .simple-list-detail-value img {
           background-color: map-get($configuration, simpleListImageBackgroundTablet);
+        }
+
+        .file-holder {
+          .file-item {
+            .file-title {
+              color: $bodyTextColorTablet;
+              font-weight: $bodyFontWeightTablet;
+            }
+  
+            .file-info {
+              font-size: $bodyFontSizeTablet * 0.85;
+              color: rgba($bodyTextColorTablet, 0.5);
+            }
+  
+            .file-icon {
+              color: map-get($configuration, simpleListFileArrowColorTablet);
+            }
+          }
         }
 
         .simple-list-detail-value {
@@ -1253,6 +1292,24 @@
 
         .simple-list-detail-value img {
           background-color: map-get($configuration, simpleListImageBackgroundDesktop);
+        }
+
+        .file-holder {
+          .file-item {
+            .file-title {
+              color: $bodyTextColorDesktop;
+              font-weight: $bodyFontWeightDesktop;
+            }
+  
+            .file-info {
+              font-size: $bodyFontSizeDesktop * 0.85;
+              color: rgba($bodyTextColorDesktop, 0.5);
+            }
+  
+            .file-icon {
+              color: map-get($configuration, simpleListFileArrowColorDesktop);
+            }
+          }
         }
 
         .simple-list-detail-value {

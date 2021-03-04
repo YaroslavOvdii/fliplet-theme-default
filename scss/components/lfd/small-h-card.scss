@@ -257,7 +257,10 @@
   smallHCardPositionBottomDesktop: $smallHCardPositionBottomDesktop,
   smallHCardPositionLeftDesktop: $smallHCardPositionLeftDesktop,
   smallHCardIndexDesktop: $smallHCardIndexDesktop,
-  smallHCardDisplayDesktop: $smallHCardDisplayDesktop
+  smallHCardDisplayDesktop: $smallHCardDisplayDesktop,
+  smallHCardListFileArrowColor: $smallHCardListFileArrowColor,
+  smallHCardListFileArrowColorTablet: $smallHCardListFileArrowColorTablet,
+  smallHCardListFileArrowColorDesktop: $smallHCardListFileArrowColorDesktop
   ), $options);
 
   $instanceSelector: '[data-widget-package="com.fliplet.dynamic-lists"]';
@@ -415,6 +418,24 @@
         background-color: map-get($configuration, smallHCardBackgroundColor);
       }
 
+      .file-holder {
+        .file-item {
+          .file-title {
+            color: $bodyTextColor;
+            font-weight: $bodyFontWeight;
+          }
+
+          .file-info {
+            font-size: $bodyFontSize * 0.85;
+            color: rgba($bodyTextColor, 0.5);
+          }
+
+          .file-icon {
+            color: map-get($configuration, smallHCardListFileArrowColor);
+          }
+        }
+      }
+
       .small-h-card-list-detail-name {
         color: map-get($configuration, smallHCardFontColor);
 
@@ -503,6 +524,24 @@
           background-color: map-get($configuration, smallHCardBackgroundColorTablet);
         }
 
+        .file-holder {
+          .file-item {
+            .file-title {
+              color: $bodyTextColorTablet;
+              font-weight: $bodyFontWeightTablet;
+            }
+  
+            .file-info {
+              font-size: $bodyFontSizeTablet * 0.85;
+              color: rgba($bodyTextColorTablet, 0.5);
+            }
+  
+            .file-icon {
+              color: map-get($configuration, smallHCardListFileArrowColorTablet);
+            }
+          }
+        }
+
         .small-h-card-list-detail-name {
           color: map-get($configuration, smallHCardFontColorTablet);
         }
@@ -587,6 +626,24 @@
 
         .small-h-card-list-detail-content-wrapper {
           background-color: map-get($configuration, smallHCardBackgroundColorDesktop);
+        }
+
+        .file-holder {
+          .file-item {
+            .file-title {
+              color: $bodyTextColorDesktop;
+              font-weight: $bodyFontWeightDesktop;
+            }
+  
+            .file-info {
+              font-size: $bodyFontSizeDesktop * 0.85;
+              color: rgba($bodyTextColorDesktop, 0.5);
+            }
+  
+            .file-icon {
+              color: map-get($configuration, smallHCardListFileArrowColorDesktop);
+            }
+          }
         }
 
         .small-h-card-list-detail-name {

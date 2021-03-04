@@ -347,10 +347,13 @@
     smallCardAddButtonIconDesktop: $smallCardAddButtonIconDesktop,
     smallCardSortIconColor: $smallCardSortIconColor,
     smallCardSortIconColorTablet: $smallCardSortIconColorTablet,
-    smallCardSortIconColorDesktop: $smallCardSortIconColorDesktop
+    smallCardSortIconColorDesktop: $smallCardSortIconColorDesktop,
+    smallCardListFileArrowColor: $smallCardListFileArrowColor,
+    smallCardListFileArrowColorTablet: $smallCardListFileArrowColorTablet,
+    smallCardListFileArrowColorDesktop: $smallCardListFileArrowColorDesktop
   ), $options);
 
-  $instanceSelector: '[data-widget-package="com.fliplet.dynamic-lists"]';
+  $instanceSelector: '[data-widget-package="com.fliplet.dynamic-lists-yaroslav"]';
   $layout: '[data-settings-layout="small-card"]';
   $layoutSelector: '#{$instanceSelector}#{$layout}';
   @if $widgetInstanceUUID != '' {
@@ -939,6 +942,24 @@
             margin-bottom: map-get($configuration, smallCardDetailLabelsMarginBottom);
             color: map-get($configuration, smallCardDetailLabelsFontColor);
           }
+
+          .file-holder {
+            .file-item {
+              .file-title {
+                color: $bodyTextColor;
+                font-weight: $bodyFontWeight;
+              }
+
+              .file-info {
+                font-size: $bodyFontSize * 0.85;
+                color: rgba($bodyTextColor, 0.5);
+              }
+
+              .file-icon {
+                color: map-get($configuration, smallCardListFileArrowColor);
+              }
+            }
+          }
         }
 
         .small-card-list-detail-image-wrapper {
@@ -1032,6 +1053,24 @@
               margin-top: map-get($configuration, smallCardDetailTextMarginTopTablet);
               margin-bottom: map-get($configuration, smallCardDetailTextMarginBottomTablet);
               color: map-get($configuration, lfdDetailFontColorTablet);
+            }
+
+            .file-holder {
+              .file-item {
+                .file-title {
+                  color: $bodyTextColorTablet;
+                  font-weight: $bodyFontWeightTablet;
+                }
+  
+                .file-info {
+                  font-size: $bodyFontSizeTablet * 0.85;
+                  color: rgba($bodyTextColorTablet, 0.5);
+                }
+  
+                .file-icon {
+                  color: map-get($configuration, smallCardListFileArrowColorTablet);
+                }
+              }
             }
 
             .small-card-list-detail-label {
@@ -1142,6 +1181,24 @@
               margin-top: map-get($configuration, smallCardDetailTextMarginTopDesktop);
               margin-bottom: map-get($configuration, smallCardDetailTextMarginBottomDesktop);
               color: map-get($configuration, lfdDetailFontColorDesktop);
+            }
+
+            .file-holder {
+              .file-item {
+                .file-title {
+                  color: $bodyTextColorDesktop;
+                  font-weight: $bodyFontWeightDesktop;
+                }
+  
+                .file-info {
+                  font-size: $bodyFontSizeDesktop * 0.85;
+                  color: rgba($bodyTextColorDesktop, 0.5);
+                }
+  
+                .file-icon {
+                  color: map-get($configuration, smallCardListFileArrowColorDesktop);
+                }
+              }
             }
 
             .small-card-list-detail-label {

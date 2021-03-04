@@ -299,7 +299,10 @@
   agendaAddButtonBackgroundDesktop: $agendaAddButtonBackgroundDesktop,
   agendaAddButtonIcon: $agendaAddButtonIcon,
   agendaAddButtonIconTablet: $agendaAddButtonIconTablet,
-  agendaAddButtonIconDesktop: $agendaAddButtonIconDesktop
+  agendaAddButtonIconDesktop: $agendaAddButtonIconDesktop,
+  agendaFileArrowColor: $agendaFileArrowColor,
+  agendaFileArrowColorTablet: $agendaFileArrowColorTablet,
+  agendaFileArrowColorDesktop: $agendaFileArrowColorDesktop
   ), $options);
 
   $instanceSelector: '[data-widget-package="com.fliplet.dynamic-lists"]';
@@ -384,6 +387,24 @@
     .agenda-detail-overlay {
       .agenda-detail-overlay-wrapper .agenda-detail-overlay-content {
         background-color: map-get($configuration, agendaListDetailOverlayBackground);
+      }
+
+      .file-holder {
+        .file-item {
+          .file-title {
+            color: $bodyTextColor;
+            font-weight: $bodyFontWeight;
+          }
+
+          .file-info {
+            font-size: $bodyFontSize * 0.85;
+            color: rgba($bodyTextColor, 0.5);
+          }
+
+          .file-icon {
+            color: map-get($configuration, smallCardListFileArrowColor);
+          }
+        }
       }
 
       .agenda-detail-overlay-panel {
@@ -487,6 +508,24 @@
               color: map-get($configuration, agendaDetailTextFontColorTablet);
             }
 
+            .file-holder {
+              .file-item {
+                .file-title {
+                  color: $bodyTextColorTablet;
+                  font-weight: $bodyFontWeightTablet;
+                }
+      
+                .file-info {
+                  font-size: $bodyFontSizeTablet * 0.85;
+                  color: rgba($bodyTextColorTablet, 0.5);
+                }
+      
+                .file-icon {
+                  color: map-get($configuration, smallCardListFileArrowColorTablet);
+                }
+              }
+            }
+
             .agenda-item-session-location {
               .agenda-item-start-date-time {
                 @include fontOnly((
@@ -568,6 +607,24 @@
               margin-top: map-get($configuration, agendaDetailTextMarginTopDesktop);
               margin-bottom: map-get($configuration, agendaDetailTextMarginBottomDesktop);
               color: map-get($configuration, agendaDetailTextFontColorDesktop);
+            }
+
+            .file-holder {
+              .file-item {
+                .file-title {
+                  color: $bodyTextColorDesktop;
+                  font-weight: $bodyFontWeightDesktop;
+                }
+      
+                .file-info {
+                  font-size: $bodyFontSizeDesktop * 0.85;
+                  color: rgba($bodyTextColorDesktop, 0.5);
+                }
+      
+                .file-icon {
+                  color: map-get($configuration, smallCardListFileArrowColorDesktop);
+                }
+              }
             }
 
             .agenda-item-session-location {

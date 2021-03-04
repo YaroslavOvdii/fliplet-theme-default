@@ -317,7 +317,10 @@
   newsFeedAddButtonIconDesktop: $newsFeedAddButtonIconDesktop,
   newsFeedSortIconColor: $newsFeedSortIconColor,
   newsFeedSortIconColorTablet: $newsFeedSortIconColorTablet,
-  newsFeedSortIconColorDesktop: $newsFeedSortIconColorDesktop
+  newsFeedSortIconColorDesktop: $newsFeedSortIconColorDesktop,
+  newsFeedFileArrowColor: $newsFeedFileArrowColor,
+  newsFeedFileArrowColorTablet: $newsFeedFileArrowColorTablet,
+  newsFeedFileArrowColorDesktop: $newsFeedFileArrowColorDesktop
   ), $options);
 
   $instanceSelector: '[data-widget-package="com.fliplet.dynamic-lists"]';
@@ -1148,6 +1151,24 @@
             color: map-get($configuration, newsFeedDetailTextFontColor);
           }
 
+          .file-holder {
+            .file-item {
+              .file-title {
+                color: $bodyTextColor;
+                font-weight: $bodyFontWeight;
+              }
+
+              .file-info {
+                font-size: $bodyFontSize * 0.85;
+                color: rgba($bodyTextColor, 0.5);
+              }
+
+              .file-icon {
+                color: map-get($configuration, newsFeedFileArrowColor);
+              }
+            }
+          }
+
           .news-feed-info-holder {
             .news-feed-date-category {
               @include fontOnly((
@@ -1280,6 +1301,24 @@
             background-color: map-get($configuration, newsFeedImageBackgroundTablet);
           }
 
+          .file-holder {
+            .file-item {
+              .file-title {
+                color: $bodyTextColorTablet;
+                font-weight: $bodyFontWeightTablet;
+              }
+
+              .file-info {
+                font-size: $bodyFontSizeTablet * 0.85;
+                color: rgba($bodyTextColorTablet, 0.5);
+              }
+
+              .file-icon {
+                color: map-get($configuration, newsFeedFileArrowColorTablet);
+              }
+            }
+          }
+
           .news-feed-detail-overlay-close {
             color: map-get($configuration, newsFeedDetailTitleFontColorTablet);
           }
@@ -1374,6 +1413,24 @@
           .news-feed-list-detail-image-wrapper {
             color: rgba(map-get($configuration, newsFeedDetailTitleFontColorDesktop), 0.1);
             background-color: map-get($configuration, newsFeedImageBackgroundDesktop);
+          }
+
+          .file-holder {
+            .file-item {
+              .file-title {
+                color: $bodyTextColorDesktop;
+                font-weight: $bodyFontWeightDesktop;
+              }
+
+              .file-info {
+                font-size: $bodyFontSizeDesktop * 0.85;
+                color: rgba($bodyTextColorDesktop, 0.5);
+              }
+
+              .file-icon {
+                color: map-get($configuration, newsFeedFileArrowColorDesktop);
+              }
+            }
           }
 
           .news-feed-detail-overlay-close {

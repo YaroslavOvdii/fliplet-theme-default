@@ -31221,9 +31221,35 @@
                 },
                 "label": "Sort icon",
                 "type": "color"
+              },
+              {
+                "name": "smallCardListFileArrowColor",
+                "default": "$smallCardListDetailOverlayIconsColor",
+                "columns": 12,
+                "styles": [
+                  {
+                    "parentSelector": "[data-widget-package='com.fliplet.dynamic-lists'][data-settings-layout='small-card']",
+                    "selectors": [
+                      ".new-small-card-list-container .section-top-wrapper .list-search-icon .fa-sort-amount-desc"
+                    ],
+                    "properties": ["color"]
+                  }
+                ],
+                "breakpoints": {
+                  "tablet": {
+                    "name": "smallCardListFileArrowColorTablet",
+                    "default": "inherit-mobile"
+                  },
+                  "desktop": {
+                    "name": "smallCardListFileArrowColorDesktop",
+                    "default": "inherit-tablet"
+                  }
+                },
+                "label": "Arrow color",
+                "type": "color"
               }
             ]
-          },
+          },  
           {
             "description": "List item border",
             "fields": [
@@ -34121,6 +34147,32 @@
                 },
                 "label": "Sort icon",
                 "type": "color"
+              },
+              {
+                "name": "newsFeedFileArrowColor",
+                "default": "$smallCardListDetailOverlayIconsColor",
+                "columns": 12,
+                "styles": [
+                  {
+                    "parentSelector": "[data-widget-package='com.fliplet.dynamic-lists'][data-settings-layout='news-feed']",
+                    "selectors": [
+                      ".new-small-card-list-container .section-top-wrapper .list-search-icon .fa-sort-amount-desc"
+                    ],
+                    "properties": ["color"]
+                  }
+                ],
+                "breakpoints": {
+                  "tablet": {
+                    "name": "newsFeedFileArrowColorTablet",
+                    "default": "inherit-mobile"
+                  },
+                  "desktop": {
+                    "name": "newsFeedFileArrowColorDesktop",
+                    "default": "inherit-tablet"
+                  }
+                },
+                "label": "Arrow color",
+                "type": "color"
               }
             ]
           },
@@ -36813,6 +36865,32 @@
                 },
                 "label": "Add button icon color",
                 "type": "color"
+              },
+              {
+                "name": "agendaFileArrowColor",
+                "default": "$agendaListDetailOverlayIconsColor",
+                "columns": 12,
+                "styles": [
+                  {
+                    "parentSelector": "[data-widget-package='com.fliplet.dynamic-lists'][data-settings-layout='agenda']",
+                    "selectors": [
+                      ".new-small-card-list-container .section-top-wrapper .list-search-icon .fa-sort-amount-desc"
+                    ],
+                    "properties": ["color"]
+                  }
+                ],
+                "breakpoints": {
+                  "tablet": {
+                    "name": "agendaFileArrowColorTablet",
+                    "default": "inherit-mobile"
+                  },
+                  "desktop": {
+                    "name": "agendaFileArrowColorDesktop",
+                    "default": "inherit-tablet"
+                  }
+                },
+                "label": "Arrow color",
+                "type": "color"
               }
             ]
           },
@@ -39157,7 +39235,7 @@
                 "columns": 12,
                 "styles": [
                   {
-                    "parentSelector": "[data-widget-package='com.fliplet.dynamic-lists'][data-settings-layout='small-card']",
+                    "parentSelector": "[data-widget-package='com.fliplet.dynamic-lists'][data-settings-layout='small-h-card']",
                     "selectors": [
                       ".new-small-h-card-list-container .small-h-card-list-detail-image-wrapper",
                       ".small-h-card-detail-overlay .small-h-card-detail-overlay-wrapper .small-h-card-detail-overlay-panel .small-h-card-detail-wrapper .small-h-card-list-detail-image-wrapper"
@@ -39176,6 +39254,32 @@
                   }
                 },
                 "label": "Image area background",
+                "type": "color"
+              },
+              {
+                "name": "smallHCardListFileArrowColor",
+                "default": "$smallHCardListDetailOverlayIconsColor",
+                "columns": 12,
+                "styles": [
+                  {
+                    "parentSelector": "[data-widget-package='com.fliplet.dynamic-lists'][data-settings-layout='small-h-card']",
+                    "selectors": [
+                      ".new-small-card-list-container .section-top-wrapper .list-search-icon .fa-sort-amount-desc"
+                    ],
+                    "properties": ["color"]
+                  }
+                ],
+                "breakpoints": {
+                  "tablet": {
+                    "name": "smallHCardListFileArrowColorTablet",
+                    "default": "inherit-mobile"
+                  },
+                  "desktop": {
+                    "name": "smallHCardListFileArrowColorDesktop",
+                    "default": "inherit-tablet"
+                  }
+                },
+                "label": "Arrow color",
                 "type": "color"
               }
             ]
@@ -41797,6 +41901,32 @@
                   }
                 },
                 "label": "Sort icon",
+                "type": "color"
+              },
+              {
+                "name": "simpleListFileArrowColor",
+                "default": "$simpleListDetailOverlayIconsColor",
+                "columns": 12,
+                "styles": [
+                  {
+                    "parentSelector": "[data-widget-package='com.fliplet.dynamic-lists'][data-settings-layout='simple-list']",
+                    "selectors": [
+                      ".new-small-card-list-container .section-top-wrapper .list-search-icon .fa-sort-amount-desc"
+                    ],
+                    "properties": ["color"]
+                  }
+                ],
+                "breakpoints": {
+                  "tablet": {
+                    "name": "simpleListFileArrowColorTablet",
+                    "default": "inherit-mobile"
+                  },
+                  "desktop": {
+                    "name": "simpleListFileArrowColorDesktop",
+                    "default": "inherit-tablet"
+                  }
+                },
+                "label": "Arrow color",
                 "type": "color"
               }
             ]
