@@ -386,10 +386,7 @@ html.no-touchevents.js-focus-visible {
       box-shadow: 0px 0px 0px $focusOutlineWidth $focusOutlineColor !important;
     }
 
-    &:focus:not(.focus-visible) {
-      box-shadow: none;
-    }
-
+    &:focus:not(.focus-visible),
     &:not(:focus-visible) {
       box-shadow: none;
     }
@@ -403,10 +400,7 @@ html.no-touchevents.js-focus-visible {
         box-shadow: 0px 0px 0px $focusOutlineWidthTablet $focusOutlineColorTablet !important;
       }
   
-      &:focus:not(.focus-visible) {
-        box-shadow: none;
-      }
-  
+      &:focus:not(.focus-visible),
       &:not(:focus-visible) {
         box-shadow: none;
       }
@@ -421,10 +415,7 @@ html.no-touchevents.js-focus-visible {
         box-shadow: 0px 0px 0px $focusOutlineWidthDesktop $focusOutlineColorDesktop !important;
       }
   
-      &:focus:not(.focus-visible) {
-        box-shadow: none;
-      }
-  
+      &:focus:not(.focus-visible),
       &:not(:focus-visible) {
         box-shadow: none;
       }
