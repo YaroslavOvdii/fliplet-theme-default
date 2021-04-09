@@ -678,71 +678,69 @@
         }
       }
 
-      .agenda-list-card-holder {
-        .agenda-list-item {
-          @include borderOnly((
-            borderSides: map-get($configuration, agendaListItemBorderSides),
-            borderWidth: map-get($configuration, agendaListItemBorderWidth),
-            borderStyle: map-get($configuration, agendaListItemBorderStyle),
-            borderColor: map-get($configuration, agendaListItemBorder)
-          ));
-          border-radius: map-get($configuration, agendaListItemBorderRadius);
-  
-          @include shadowOnly((
-            shadowStyle: map-get($configuration, agendaListItemShadowStyle),
-            shadowXOffset: map-get($configuration, agendaListItemShadowXoffset),
-            shadowYOffset: map-get($configuration, agendaListItemShadowYoffset),
-            shadowBlur: map-get($configuration, agendaListItemShadowBlur),
-            shadowSpread: map-get($configuration, agendaListItemShadowSpread),
-            shadowColor: map-get($configuration, agendaListItemShadowColor)
-          ));
-  
-          .slide-over {
-            .agenda-item-inner-content {
-              background-color: map-get($configuration, agendaListItemBackground);
-  
-              .agenda-item-time:not(.line) {
-                @include fontOnly((
-                  fontFamily: map-get($configuration, agendaItemTimeFontFamily),
-                  fontSize: map-get($configuration, agendaItemTimeFontSize),
-                  fontLineHeight: map-get($configuration, agendaItemTimeLineHeight),
-                  fontWeight: map-get($configuration, agendaItemTimeFontWeight),
-                  fontStyle: map-get($configuration, agendaItemTimeItalic),
-                  fontDecoration: map-get($configuration, agendaItemTimeUnderline)
-                ));
-  
-                color: map-get($configuration, agendaItemTimeFontColor);
-              }
-  
-              .agenda-item-session-location .agenda-item-location {
-                @include fontOnly((
-                  fontFamily: map-get($configuration, agendaDescriptionFontFamily),
-                  fontSize: map-get($configuration, agendaDescriptionFontSize),
-                  fontLineHeight: map-get($configuration, agendaDescriptionLineHeight),
-                  fontWeight: map-get($configuration, agendaDescriptionFontWeight),
-                  fontStyle: map-get($configuration, agendaDescriptionItalic),
-                  fontDecoration: map-get($configuration, agendaDescriptionUnderline)
-                ));
-  
-                margin-top: map-get($configuration, agendaDescriptionMarginTop);
-                margin-bottom: map-get($configuration, agendaDescriptionMarginBottom);
-                color: map-get($configuration, agendaDescriptionFontColor);
-              }
-  
-              h2.agenda-item-title {
-                @include fontOnly((
-                  fontFamily: map-get($configuration, agendaTitleFontFamily),
-                  fontSize: map-get($configuration, agendaTitleFontSize),
-                  fontLineHeight: map-get($configuration, agendaTitleLineHeight),
-                  fontWeight: map-get($configuration, agendaTitleFontWeight),
-                  fontStyle: map-get($configuration, agendaTitleItalic),
-                  fontDecoration: map-get($configuration, agendaTitleUnderline)
-                ));
-  
-                margin-top: map-get($configuration, agendaTitleMarginTop);
-                margin-bottom: map-get($configuration, agendaTitleMarginBottom);
-                color: map-get($configuration, agendaTitleFontColor);
-              }
+      .agenda-list-card-holder .agenda-list-item {
+        @include borderOnly((
+          borderSides: map-get($configuration, agendaListItemBorderSides),
+          borderWidth: map-get($configuration, agendaListItemBorderWidth),
+          borderStyle: map-get($configuration, agendaListItemBorderStyle),
+          borderColor: map-get($configuration, agendaListItemBorder)
+        ));
+        border-radius: map-get($configuration, agendaListItemBorderRadius);
+
+        @include shadowOnly((
+          shadowStyle: map-get($configuration, agendaListItemShadowStyle),
+          shadowXOffset: map-get($configuration, agendaListItemShadowXoffset),
+          shadowYOffset: map-get($configuration, agendaListItemShadowYoffset),
+          shadowBlur: map-get($configuration, agendaListItemShadowBlur),
+          shadowSpread: map-get($configuration, agendaListItemShadowSpread),
+          shadowColor: map-get($configuration, agendaListItemShadowColor)
+        ));
+
+        .slide-over {
+          .agenda-item-inner-content {
+            background-color: map-get($configuration, agendaListItemBackground);
+
+            .agenda-item-time:not(.line) {
+              @include fontOnly((
+                fontFamily: map-get($configuration, agendaItemTimeFontFamily),
+                fontSize: map-get($configuration, agendaItemTimeFontSize),
+                fontLineHeight: map-get($configuration, agendaItemTimeLineHeight),
+                fontWeight: map-get($configuration, agendaItemTimeFontWeight),
+                fontStyle: map-get($configuration, agendaItemTimeItalic),
+                fontDecoration: map-get($configuration, agendaItemTimeUnderline)
+              ));
+
+              color: map-get($configuration, agendaItemTimeFontColor);
+            }
+
+            .agenda-item-session-location .agenda-item-location {
+              @include fontOnly((
+                fontFamily: map-get($configuration, agendaDescriptionFontFamily),
+                fontSize: map-get($configuration, agendaDescriptionFontSize),
+                fontLineHeight: map-get($configuration, agendaDescriptionLineHeight),
+                fontWeight: map-get($configuration, agendaDescriptionFontWeight),
+                fontStyle: map-get($configuration, agendaDescriptionItalic),
+                fontDecoration: map-get($configuration, agendaDescriptionUnderline)
+              ));
+
+              margin-top: map-get($configuration, agendaDescriptionMarginTop);
+              margin-bottom: map-get($configuration, agendaDescriptionMarginBottom);
+              color: map-get($configuration, agendaDescriptionFontColor);
+            }
+
+            h2.agenda-item-title {
+              @include fontOnly((
+                fontFamily: map-get($configuration, agendaTitleFontFamily),
+                fontSize: map-get($configuration, agendaTitleFontSize),
+                fontLineHeight: map-get($configuration, agendaTitleLineHeight),
+                fontWeight: map-get($configuration, agendaTitleFontWeight),
+                fontStyle: map-get($configuration, agendaTitleItalic),
+                fontDecoration: map-get($configuration, agendaTitleUnderline)
+              ));
+
+              margin-top: map-get($configuration, agendaTitleMarginTop);
+              margin-bottom: map-get($configuration, agendaTitleMarginBottom);
+              color: map-get($configuration, agendaTitleFontColor);
             }
           }
         }
