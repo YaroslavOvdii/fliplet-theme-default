@@ -387,26 +387,6 @@ html.no-touchevents.js-focus-visible {
     &:focus-visible {
       box-shadow: 0px 0px 0px $focusOutlineWidth $focusOutlineColor;
     }
-
-    @include above($tabletBreakpoint) {
-      &:focus {
-        box-shadow: 0px 0px 0px $focusOutlineWidthTablet $focusOutlineColorTablet !important;
-      }
-  
-      &:focus-visible {
-        box-shadow: 0px 0px 0px $focusOutlineWidthTablet $focusOutlineColorTablet;
-      }
-    }
-
-    @include above($desktopBreakpoint) {
-      &:focus {
-        box-shadow: 0px 0px 0px $focusOutlineWidthDesktop $focusOutlineColorDesktop !important;
-      }
-  
-      &:focus-visible {
-        box-shadow: 0px 0px 0px $focusOutlineWidthDesktop $focusOutlineColorDesktop;
-      }
-    }
   }
 }
 
