@@ -380,22 +380,32 @@ table.mce-item-table {
 
 html.no-touchevents.js-focus-visible {
   .focus-outline-active, .focus-outline {
-    outline: none;
-
     &:focus.focus-visible {
-      box-shadow: 0px 0px 0px $focusOutlineWidth $focusOutlineColor !important;
-    }
-
-    &:focus:not(.focus-visible) {
-      box-shadow: none;
-    }
-
-    &:not(:focus-visible) {
-      box-shadow: none;
+      box-shadow: 0px 0px 0px $focusOutlineWidth $focusOutlineColor;
     }
 
     &:focus-visible {
       box-shadow: 0px 0px 0px $focusOutlineWidth $focusOutlineColor;
+    }
+
+    @include above($tabletBreakpoint) {
+      &:focus.focus-visible {
+        box-shadow: 0px 0px 0px $focusOutlineWidthTablet $focusOutlineColorTablet;
+      }
+  
+      &:focus-visible {
+        box-shadow: 0px 0px 0px $focusOutlineWidthTablet $focusOutlineColorTablet;
+      }
+    }
+
+    @include above($desktopBreakpoint) {
+      &:focus.focus-visible {
+        box-shadow: 0px 0px 0px $focusOutlineWidthDesktop $focusOutlineColorDesktop;
+      }
+  
+      &:focus-visible {
+        box-shadow: 0px 0px 0px $focusOutlineWidthDesktop $focusOutlineColorDesktop;
+      }
     }
   }
 }
